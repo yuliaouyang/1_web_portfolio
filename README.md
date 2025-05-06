@@ -19,4 +19,4 @@ Web Portfolio（ウェブポートフォリオ）は、経歴・プロジェク�
 
 ## 🔗 Links | リンク
 
-Live: https://yuliaouyang-portfolio.netlify.app/](https://yuliaouyang-portfolio.netlify.app/
+Live: https://yuliaouyang-portfolio.netlify.app/
