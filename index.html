@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuni web Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fanta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">OUYANG Yuni</a>
+        <nav>
+            <a target="_blank" href="https://github.com/yuliaouyang"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm OUYANG Yuni... </h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-decription">
+                Master's student in Economics at Waseda University. Aspiring software developer.<br>
+                Based in Tokyo. I enjoy dancing, going to the batting center, and creating fun and useful internet applications.<br>
+                早稲田大学大学院で経済学を専攻している修士課程の学生です。ソフトウェア開発者を目指しています。<br>
+                東京在住。ダンス、バッティングセンターに行くこと、そして楽しく役立つインターネットアプリケーションの制作を楽しんでいます。
+            </h5>            
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a target="_blank" href="mailto:ouyangyuni@fuji.waseda.jp">Email me</a>
+                <a target="_blank" href="https://github.com/yuliaouyang">Github</a>
+                <a target="_blank" href="">Linkedin</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's changed!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | NextJS | NodeJS</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>FantaCSS | Firebase | Git | AWS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data analysis | API integration (requests) | Git </td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Java SE | Object-Oriented Programming (OOP)  </td>
+                    </tr>
+                </tbody>    
+            </table>
+        </section>
+        <section>
+            <h2>Latest Project</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>May 6, 2025</p>
+                        <h4>Expenny | The Subscription Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Monitor your subscription data with ease</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://expennylog.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/yuliaouyang/4_expenny">Github</a>
+                        </div>
+                    </div>
+                        <div class="img-div">
+                            <img class="big-img" src="/1_web_portfolio/public/expenny.png" alt="yuni-thumbnail"
+                            >    
+                        </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>April 13, 2025</p>
+                        <h4>Smallstore</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                        </div>
+                        <p>A super useful store for programmers and productivity fiends</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://master.d1kpq9xxk9rmgq.amplifyapp.com/">Live</a>
+                            <a target="_blank" href="https://github.com/yuliaouyang/3_smallstore">Github</a>
+                        </div>
+                    </div>
+                        <div class="img-div">
+                            <img class="big-img" src="/1_web_portfolio/public/smallstore.png" alt="yuni-thumbnail"
+                            >    
+                        </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div>
+                        <p>February 15, 2025</p>
+                        <h4>FitProgram</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>The Simple 30 Workouts Training Plan</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://fitprogram.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/yuliaouyang/2_fitprogram">Github</a>
+                        </div>
+                    </div>
+                        <div class="img-div">
+                            <img class="big-img" src="/1_web_portfolio/public/fitprogram.png" alt="yuni-thumbnail"
+                            >    
+                        </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>December 28, 2024 </p>
+                        <h4>WeatherApp</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Python</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PyQt5</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>OpenWeatherMap API</p>
+                            </div>
+                        </div>
+                        <p>A minimalist weather app built with PyQt5 and OpenWeatherMap API</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live(N/A)</a>
+                            <a target="_blank" href="https://github.com/yuliaouyang/weatherapp">Github</a>
+                        </div>
+                    </div>
+                        <div class="img-div">
+                            <img class="big-img" src="/1_web_portfolio/public/python.png" alt="yuni-thumbnail"
+                            >    
+                        </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>October 5, 2024</p>
+                        <h4>Java AlarmClock</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Java</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Java</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Audio</p>
+                            </div>
+                        </div>
+                        <p>Set a time, wait for the countdown, and enjoy a custom .wav alarm.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live(N/A)</a>
+                            <a target="_blank" href="https://github.com/yuliaouyang/MyFirstProject">Github</a>
+                        </div>
+                    </div>
+                        <div class="img-div">
+                            <img class="big-img" src="/1_web_portfolio/public/java.png" alt="yuni-thumbnail"
+                            >    
+                        </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By<a href="" target="_blank"> Yuni</a> ⭐️ the repo on <a target="_blank"
+            href="https://github.com/yuliaouyang">Github</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for our little color switching game
+        
+        // 1. select all the html elements so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+    
+        // 2. create the functions 
+        function playGame() {
+             // this function enables the play of the game by showing the color selector input
+             colorDiv.style.display = 'block'
+             playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // take the users selected color on the input, and assign it to be the background color of the website
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+            
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+        
+    </script>
+</body>
+</html>
